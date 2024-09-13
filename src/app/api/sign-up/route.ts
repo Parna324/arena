@@ -60,8 +60,9 @@ export async function POST(request: Request) {
       });
 
       await newUser.save();
+      console.log(newUser);
     }
-
+    
     // Send verification email
     const emailResponse = await sendVerificationEmail(
       email,
