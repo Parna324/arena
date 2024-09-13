@@ -9,9 +9,9 @@ export async function SendResetpasswordOtp(
 ): Promise<ApiResponse> {
   try {
     await resend.emails.send({
-      from: 'smartXcode<smartxcode@smartcraze.online>',
+      from: 'ARENA<smartxcode@smartcraze.online>',
       to: email,
-      subject: 'smartxcode OTP',
+      subject: 'ARENA OTP',
       react: ResetPasswordEmail({ username, otp: verifyCode }),
     });
     return { success: true, message: 'Verification email sent successfully.' };
