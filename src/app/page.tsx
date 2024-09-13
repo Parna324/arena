@@ -1,9 +1,11 @@
-import Image from "next/image";
-
-export default function Home() {
+import React from 'react'
+// import Signup from '@/components/Signup'
+function Home() {
   return (
-   <div>
-    <h1 className="text-center text-8xl  items-center">SPZ 404</h1>
-   </div>
-  );
+    <div>
+      
+    </div>
+  )
 }
+
+export default Home
